@@ -26,7 +26,7 @@ Investigating the relationship between CO2 emissions and life expectancy in the 
 
 ![Climate Change Impact](~/GA/Portfolio/img/climate-change.jpg)
 
-### Decoding Physical and Cognitive Impacts of Particulate Matter Concentrations at Ultra-Fine Scales
+### Kaggle "Ames Housing Data" project
 [Publication](https://www.mdpi.com/1424-8220/22/11/4240)
 
 In the dynamic landscape of the housing market, this project focuses on the Kaggle "Ames Housing Data" project, tackling the intricate challenge of accurate price predictions. With 2930 housing observations and diverse variables, our approach involves robust linear regression modeling, incorporating feature engineering and selection techniques. We aim to create a high-performing model, ensuring reliability with new data, and measuring success through the root mean squared error. This endeavor provides essential insights for property owners in Ames, Iowa, offering a strategic edge in maximizing market value and navigating the complexities of real estate dynamics.
