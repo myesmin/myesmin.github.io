@@ -14,7 +14,7 @@
 - Conducted over 50 events, averaging 25+ attendees daily, to establish relationships & activities across the student body & residential housing
 - Efficiently responded to more than 20 crisis incidents, assessing needs & calling police/medical personnel where necessary; always ensured safety of 200+ students
   
-**Bystander Facilitator @ WesWell Wesleyan Univesity (_ August 2020 – May 2023_)**
+**Bystander Facilitator @ WesWell Wesleyan Univesity (_August 2020 – May 2023_)**
 - Delivered engaging and informative workshops to over 250 athletes on bystander intervention, sexual health, relationships, and safe alcohol use resulting in a 40% increase in knowledge retention among participants
 
 ## Projects
@@ -23,7 +23,7 @@
 
 Investigating the relationship between CO2 emissions and life expectancy in the United States and Bangladesh from 1998 to 2018, this study employs a meticulously analyzed dataset. Utilizing Python, we aim to discern the shifts in life expectancy and climate patterns in Bangladesh and India over the course of two decades.
 
-![Climate Change Impact](~/Img/climate-change.jpg)
+![Climate Change Impact](/Img/climate-change.jpg)
 
 ### Kaggle "Ames Housing Data" project
 [Publication](https://github.com/mohona-yesmin/Kaggle-Ames-Housing-Data)
