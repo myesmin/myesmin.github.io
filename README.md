@@ -1,5 +1,4 @@
 # Mohona Yesmin
-
 [Resume](https://drive.google.com/file/d/1d9XdvqQ6350OoYzGjB3Tqi_hZ-Eg84O1/view?usp=sharing) | [Github](https://github.com/mohona-yesmin)
 
 #### DATA SCIENTIST
