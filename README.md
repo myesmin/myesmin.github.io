@@ -1,5 +1,7 @@
 # Mohona Yesmin
 
+[Resume](https://drive.google.com/file/d/1d9XdvqQ6350OoYzGjB3Tqi_hZ-Eg84O1/view?usp=sharing) | [Github](https://github.com/mohona-yesmin)
+
 #### DATA SCIENTIST
 I am a Data Scientist who leverages a diverse background in neuroscience, chemistry, and film to approach
 complex problems with a keen eye for data-driven insights. My journey has encompassed diverse experiences,
