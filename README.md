@@ -20,13 +20,14 @@
 
 ## Projects
 ### Climate Change and Life Expectancy in Bangladesha and USA
-[Publication](https://git.generalassemb.ly/myesmin/project-1)
+[Publication](https://github.com/mohona-yesmin/Climate-Change)
 
 Investigating the relationship between CO2 emissions and life expectancy in the United States and Bangladesh from 1998 to 2018, this study employs a meticulously analyzed dataset. Utilizing Python, we aim to discern the shifts in life expectancy and climate patterns in Bangladesh and India over the course of two decades.
 
 ![Climate Change Impact](~/GA/Portfolio/img/climate-change.jpg)
 
 ### Kaggle "Ames Housing Data" project
-[Publication](https://git.generalassemb.ly/myesmin/project-2)
+[Publication](https://github.com/mohona-yesmin/Kaggle-Ames-Housing-Data)
+
 
 In the dynamic landscape of the housing market, this project focuses on the Kaggle "Ames Housing Data" project, tackling the intricate challenge of accurate price predictions. With 2930 housing observations and diverse variables, our approach involves robust linear regression modeling, incorporating feature engineering and selection techniques. We aim to create a high-performing model, ensuring reliability with new data, and measuring success through the root mean squared error. This endeavor provides essential insights for property owners in Ames, Iowa, offering a strategic edge in maximizing market value and navigating the complexities of real estate dynamics.
