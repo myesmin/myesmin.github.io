@@ -30,8 +30,6 @@ communication, and leadership.
 
 Investigating the relationship between CO2 emissions and life expectancy in the United States and Bangladesh from 1998 to 2018, this study employs a meticulously analyzed dataset. Utilizing Python, we aim to discern the shifts in life expectancy and climate patterns in Bangladesh and India over the course of two decades.
 
-![Climate Change Impact](/Img/climate-change.jpg)
-
 ### Kaggle "Ames Housing Data" project
 [Publication](https://github.com/mohona-yesmin/Kaggle-Ames-Housing-Data)
 
