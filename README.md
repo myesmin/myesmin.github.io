@@ -1,6 +1,13 @@
 # Mohona Yesmin
 
-#### Technical Skills: Python, SQL, AWS
+#### DATA SCIENTIST
+I am a Data Scientist who leverages a diverse background in neuroscience, chemistry, and film to approach
+complex problems with a keen eye for data-driven insights. My journey has encompassed diverse experiences,
+from conducting STEM research to orchestrating community campaigns and marketing large conferences. This
+multifaceted journey has honed a unique skill set that seamlessly blends data analysis, effective
+communication, and leadership.
+
+#### Technical Skills: Python, R, SQL, AWS, Tableau, Power BI
 
 ## Education		
 - Bachelor of Arts, Major: Neuroscience and Behavior, Double Minor: Chemistry and Film | **Wesleyan University**, Middletown, CT ( _May 2023_ )
