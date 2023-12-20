@@ -3,9 +3,8 @@
 #### Technical Skills: Python, SQL, AWS
 
 ## Education		
-- Bachelor of Arts, Major: Neuroscience and Behavior, Double Minor: Chemistry and Film, Extensive Coursework: Architecture and Data Analytics | Wesleyan University, Middletown, CT (_May 2023_)
-- Data Science Immersive Fellow | General Assembly, New York, NY (_December 2023_)
-
+- Bachelor of Arts, Major: Neuroscience and Behavior, Double Minor: Chemistry and Film | **Wesleyan University**, Middletown, CT ( _May 2023_ )
+- Data Science Immersive Fellow | **General Assembly**, New York, NY ( _December 2023_ )
 
 ## Work Experience
 **Community Organizer @ DRUM: Desis Rising Up and Moving (_August 2023 – Present_)**
@@ -29,5 +28,9 @@ Investigating the relationship between CO2 emissions and life expectancy in the 
 ### Kaggle "Ames Housing Data" project
 [Publication](https://github.com/mohona-yesmin/Kaggle-Ames-Housing-Data)
 
-
 In the dynamic landscape of the housing market, this project focuses on the Kaggle "Ames Housing Data" project, tackling the intricate challenge of accurate price predictions. With 2930 housing observations and diverse variables, our approach involves robust linear regression modeling, incorporating feature engineering and selection techniques. We aim to create a high-performing model, ensuring reliability with new data, and measuring success through the root mean squared error. This endeavor provides essential insights for property owners in Ames, Iowa, offering a strategic edge in maximizing market value and navigating the complexities of real estate dynamics.
+
+### WebAPI and NLP: Reddit Predictions
+[Publication](https://github.com/mohona-yesmin/Reddit-NLP-Harry-Potter-Marvel)
+
+Marketing companies strategically analyze the online activities, interests, and demographics of Harry Potter and Marvel fans on platforms like subreddits r/harrypotter and r/marvel, leveraging this data to optimize targeted advertising for Halloween merchandise and boost conversion rates through impactful pop-up ads.
