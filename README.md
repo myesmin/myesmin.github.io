@@ -1,14 +1,16 @@
 # Mohona Yesmin
-[Resume](https://drive.google.com/file/d/1puqq_FJ5PFtfBWbM6IgAthCN6SHNS-FD/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/myesmin1103/) | [Github](https://github.com/mohona-yesmin)
+[Resume](https://docs.google.com/document/d/1EAjT7KvJBTujVHU3CJ-N2kLMuEo0jz7UUmoMShKqDII/edit) | [LinkedIn](https://www.linkedin.com/in/myesmin1103/) | [Github](https://github.com/mohona-yesmin)
 
 #### DATA SCIENTIST
-I am a Data Scientist who leverages a diverse background in neuroscience, chemistry, and film to approach
-complex problems with a keen eye for data-driven insights. My journey has encompassed diverse experiences,
-from conducting STEM research to orchestrating community campaigns and marketing large conferences. This
-multifaceted journey has honed a unique skill set that seamlessly blends data analysis, effective
-communication, and leadership.
+​​I am a Data Scientist with a multidisciplinary background encompassing neuroscience, chemistry, and arts to approach complex problems with a keen eye for data-driven insights. My journey includes conducting STEM research, organizing community campaigns, marketing large conferences, developing strong technical skills in data analysis, communication, and leadership. I am now driven to bring my passion for using data to drive meaningful solutions to address critical societal challenges and contribute to a more data-informed world, creating a positive impact for the future data-driven world. 
 
-#### Technical Skills: Python, R, SQL, AWS, Tableau, Power BI
+#### Coding: Python - Pandas - Numpy - Scikit-learn - Streamlit - R - SQL - Web Scraping - Pyspark - HTML/CSS
+#### Machine Learning: Regression - Classification - NLP - Neural Networks - Tensorflow - Time Series - Predictive Analysis 
+#### Data Visualization: Tableau - Matplotlib - Seaborn - Plotly - Geopandas - Power BI
+#### Tools: JupyterLab - Github - Slack - Jira - Google Analytics/Ads - Microsoft Office - Google Suite - Google Collab - AWS
+#### Media: Adobe Cloud - AutoCAD - Rhino - 3D Printing - Cinematography - Canva - WordPress - Digital marketing
+#### Languages: English (native) - Bengali (native) - Hindi-Urdu (native) - Mandarin (conversational) - Spanish (basic) 
+
 
 ## Education		
 - Bachelor of Arts, Major: Neuroscience and Behavior, Double Minor: Chemistry and Film | **Wesleyan University**, Middletown, CT ( _May 2023_ )
