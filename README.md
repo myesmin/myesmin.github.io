@@ -6,10 +6,15 @@
 
 #### Skils:
 **Coding:** Python - Pandas - Numpy - Scikit-learn - Streamlit - R - SQL - Web Scraping - Pyspark - HTML/CSS
+
 **Machine Learning:** Regression - Classification - NLP - Neural Networks - Tensorflow - Time Series - Predictive Analysis 
+
 **Data Visualization:** Tableau - Matplotlib - Seaborn - Plotly - Geopandas - Power BI
+
 **Tools:** JupyterLab - Github - Slack - Jira - Google Analytics/Ads - Microsoft Office - Google Suite - Google Collab - AWS
+
 **Media:** Adobe Cloud - AutoCAD - Rhino - 3D Printing - Cinematography - Canva - WordPress - Digital marketing
+
 **Languages:** English (native) - Bengali (native) - Hindi-Urdu (native) - Mandarin (conversational) - Spanish (basic) 
 
 
