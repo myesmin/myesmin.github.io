@@ -1,5 +1,5 @@
 # Mohona Yesmin
-[Resume](https://drive.google.com/file/d/1pgx-7FN4jYvpxgnSXJoFXHDHJNsywdKt/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/myesmin1103/) | [Github](https://github.com/mohona-yesmin)
+[Resume](https://drive.google.com/file/d/1VbDyfo8J504fTX1Nb8kRv9rhIBxFxT7f/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/myesmin1103/) | [Github](https://github.com/mohona-yesmin)
 
 #### DATA SCIENTIST
 ​​I am a Data Scientist with a multidisciplinary background encompassing neuroscience, chemistry, and arts to approach complex problems with a keen eye for data-driven insights. My journey includes conducting STEM research, organizing community campaigns, marketing large conferences, developing strong technical skills in data analysis, communication, and leadership. I am now driven to bring my passion for using data to drive meaningful solutions to address critical societal challenges and contribute to a more data-informed world, creating a positive impact for the future data-driven world.
