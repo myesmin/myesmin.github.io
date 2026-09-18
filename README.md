@@ -1,5 +1,5 @@
 # Mohona Yesmin
-[Resume](https://drive.google.com/file/d/1VbDyfo8J504fTX1Nb8kRv9rhIBxFxT7f/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/myesmin1103/) | [Github](https://github.com/mohona-yesmin)
+[Resume](https://drive.google.com/file/d/1VbDyfo8J504fTX1Nb8kRv9rhIBxFxT7f/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/myesmin1103/) | [Github](https://github.com/myesmin)
 
 #### DATA SCIENTIST
 ​​I am a Data Scientist with a multidisciplinary background encompassing neuroscience, chemistry, and arts to approach complex problems with a keen eye for data-driven insights. My journey includes conducting STEM research, organizing community campaigns, marketing large conferences, developing strong technical skills in data analysis, communication, and leadership. I am now driven to bring my passion for using data to drive meaningful solutions to address critical societal challenges and contribute to a more data-informed world, creating a positive impact for the future data-driven world.
@@ -30,16 +30,16 @@
 
 ## Projects
 ### Climate Change and Life Expectancy in Bangladesha and USA
-[Publication](https://github.com/mohona-yesmin/Climate-Change)
+[Publication](https://github.com/myesmin/Climate-Change)
 
 Investigating the relationship between CO2 emissions and life expectancy in the United States and Bangladesh from 1998 to 2018, this study employs a meticulously analyzed dataset. Utilizing Python, we aim to discern the shifts in life expectancy and climate patterns in Bangladesh and India over the course of two decades.
 
 ### Kaggle "Ames Housing Data" project
-[Publication](https://github.com/mohona-yesmin/Kaggle-Ames-Housing-Data)
+[Publication](https://github.com/myesmin/Kaggle-Ames-Housing-Data)
 
 In the dynamic landscape of the housing market, this project focuses on the Kaggle "Ames Housing Data" project, tackling the intricate challenge of accurate price predictions. With 2930 housing observations and diverse variables, our approach involves robust linear regression modeling, incorporating feature engineering and selection techniques. We aim to create a high-performing model, ensuring reliability with new data, and measuring success through the root mean squared error. This endeavor provides essential insights for property owners in Ames, Iowa, offering a strategic edge in maximizing market value and navigating the complexities of real estate dynamics.
 
 ### WebAPI and NLP: Reddit Predictions
-[Publication](https://github.com/mohona-yesmin/Reddit-NLP-Harry-Potter-Marvel)
+[Publication](https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel)
 
 Marketing companies strategically analyze the online activities, interests, and demographics of Harry Potter and Marvel fans on platforms like subreddits r/harrypotter and r/marvel, leveraging this data to optimize targeted advertising for Halloween merchandise and boost conversion rates through impactful pop-up ads.
