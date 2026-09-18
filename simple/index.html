@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohona Yesmin — Résumé (plain version)</title>
+  <meta name="description" content="Plain, text-only résumé of Mohona Yesmin: Computer Science student at Hunter College building machine-learning systems, data pipelines and open-source tools.">
+  <link rel="canonical" href="https://myesmin.github.io/simple/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: light dark; --fg: #1a1a1c; --muted: #5b5b60; --bg: #fbfaf7; --line: #d9d6cf; --link: #5a3fc0; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #ece8df; --muted: #a6a29a; --bg: #101011; --line: #2c2c30; --link: #b39dff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+    h1 { margin: 0; font-size: 2rem; line-height: 1.15; letter-spacing: -.01em; }
+    h2 { margin: 2.4rem 0 .9rem; padding-bottom: .35rem; border-bottom: 1px solid var(--line); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; }
+    h3 { margin: 0; font-size: 1.05rem; }
+    p { margin: .5rem 0; }
+    ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+    li { margin: .3rem 0; }
+    .meta { color: var(--muted); font-size: .92rem; }
+    .row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .1rem 1rem; }
+    .row:has(> h3) { margin-top: 1.5rem; }
+    h2 + .row:has(> h3) { margin-top: 0; }
+    .row .meta { white-space: nowrap; }
+    .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; margin-bottom: 1.4rem; font-size: .9rem; color: var(--muted); }
+    .contact { margin-top: .5rem; color: var(--muted); }
+    .note { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+    @media print {
+      :root { --fg: #000; --muted: #333; --bg: #fff; --line: #999; --link: #000; }
+      .top, .note { display: none; }
+      main { padding: 0; max-width: none; }
+      body { font-size: 11pt; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <p class="top"><span>Plain-text version</span><a href="../">View the designed portfolio →</a></p>
+
+  <header>
+    <h1>Mohona Yesmin</h1>
+    <p class="contact">New York, NY · <a href="mailto:myesmin415@gmail.com">myesmin415@gmail.com</a> · <a href="https://github.com/myesmin">github.com/myesmin</a> · <a href="https://www.linkedin.com/in/myesmin1103/">linkedin.com/in/myesmin1103</a></p>
+    <p>Computer Science student at Hunter College (minor in Math &amp; Statistics) building machine-learning systems, data pipelines and open-source tools. Open to internships.</p>
+  </header>
+
+  <section aria-labelledby="edu">
+    <h2 id="edu">Education</h2>
+    <div class="row"><strong>Hunter College, New York, NY</strong><span class="meta">May 2028</span></div>
+    <p>Bachelor of Arts, Major: Computer Science, Minor: Math and Statistics</p>
+    <div class="row"><strong>Wesleyan University, Middletown, CT</strong><span class="meta">May 2023</span></div>
+    <p>Bachelor of Arts, Major: Neuroscience and Behavior, Minor: Chemistry and Film. Extensive coursework in data analytics.</p>
+  </section>
+
+  <section aria-labelledby="exp">
+    <h2 id="exp">Experience</h2>
+
+    <div class="row"><h3>DAIR Lab — Research Assistant</h3><span class="meta">Aug 2025 – Present · New York, NY</span></div>
+    <ul>
+      <li>Validated and scaled a multimodal Graph Neural Network pipeline (PyTorch, PyTorch Geometric GAT/GCN encoders, ESM protein embeddings) for toxin ion-channel classification; debugged a label-mapping defect silently corrupting class-level statistics and extended a persistent-homology analysis (GUDHI) from a 3-sample proof-of-concept to a validated 200-protein benchmark, achieving 87.5% test accuracy.</li>
+      <li>Implementing a custom Gradient Reversal Layer (PyTorch autograd.Function) for domain-adversarial training to close the ~30-point generalization gap between random-split (~86%) and held-out-taxon (~55%) accuracy.</li>
+    </ul>
+
+    <div class="row"><h3>EN-POWER Group — Energy Data Manager I | Energy Data Intern</h3><span class="meta">Jun 2025 – Present · New York, NY</span></div>
+    <ul>
+      <li>Developed and deployed statistical models to predict building emissions trajectories across 200+ building portfolios, delivering interpretable, actionable LL97 compliance recommendations that drove business value for 50+ clients.</li>
+      <li>Engineered large-scale data pipelines to scrape, transform, and aggregate multi-source energy datasets, building client-facing Power BI dashboards and supporting LL97 compliance filings and payment processing for 900+ properties in coordination with DOB systems.</li>
+      <li>Automated client communications, document workflows, and file management across 1,000+ clients using Python-based tools, reducing manual processing time by more than 50%.</li>
+    </ul>
+
+    <div class="row"><h3>Aarohaa.AI — Data Science Intern</h3><span class="meta">May 2025 – Jun 2025 · New York, NY</span></div>
+    <ul>
+      <li>Designed and deployed a JSON parsing agent to normalize LLM outputs across multiple data formats, ensuring consistent inter-agent communication and scalable multi-agent orchestration using RAG and agentic AI pipelines.</li>
+      <li>Implemented FastAPI endpoints to integrate AI agents with live dashboards, enabling real-time data processing, decision support, and system transparency in production environments.</li>
+      <li>Extracted, transformed, and validated backend SQL datasets by engineering new data columns and persistence logic to ensure accurate, reliable data storage across agent operations.</li>
+    </ul>
+
+    <div class="row"><h3>DRUM: Desis Rising Up and Moving — Campaign Strategist and Data Lead</h3><span class="meta">Nov 2023 – Jan 2026 · Bronx, NY</span></div>
+    <ul>
+      <li>Designed and analyzed 100+ community surveys and maintained a 500+ person membership database, translating multi-source data (social media, news, policy) into visualizations and clear reports that guided resource allocation for non-technical stakeholders and decision-makers.</li>
+    </ul>
+
+    <div class="row"><h3>General Assembly — Data Science Immersive Bootcamp Fellow</h3><span class="meta">Sep 2023 – Dec 2023 · New York, NY</span></div>
+    <ul>
+      <li>Completed 500+ hours of training in statistical modeling, machine learning algorithms, and advanced mathematics, with applications in fintech and AI using Python and SQL.</li>
+      <li>Built and deployed ML models for regression, classification, NLP, LLMs, and anomaly detection, developing domain-specific analytical content integrated into Streamlit dashboards to drive business value.</li>
+      <li>Executed projects on financial risk prediction, market trend forecasting, and portfolio optimization modeling, applying feature engineering and validation techniques for high accuracy.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="proj">
+    <h2 id="proj">Projects</h2>
+
+    <div class="row"><h3>Kubeflow (CNCF open-source ML platform) — Org Member &amp; Contributor</h3><span class="meta">Jan 2026 – Present</span></div>
+    <ul>
+      <li>Shipped merged PRs migrating Python clients off deprecated APIs to v1 per KEP-0004 across <a href="https://github.com/kubeflow/hub">kubeflow/hub</a> and <a href="https://github.com/kubeflow/sdk">kubeflow/sdk</a>, regenerating OpenAPI clients and validating 270+ unit/E2E tests with pytest, mypy, ruff.</li>
+      <li>Designed and shipped a decoupled upload_artifact utility (Python, Pydantic) supporting S3 and OCI object storage, isolating artifact uploads from registry logic per a community feature request.</li>
+      <li>Building a Go client and backend proxy layer routing UI traffic to v1 Model Registry, Model Catalog, and MCP Catalog APIs; co-authored the SDK 0.4.0 release blog post and became a Kubeflow org member on the strength of sustained contributions.</li>
+    </ul>
+
+    <div class="row"><h3>Sera — adaptive reading app (in development)</h3><span class="meta">2026 – Present</span></div>
+    <ul>
+      <li>Designing an app that reads uploaded PDFs aloud in an original synthetic voice (StyleTTS 2) with word-by-word synchronized highlighting, a retrieval-augmented “Ask Sera” assistant (LangGraph, pgvector) and reading-based recommendations.</li>
+      <li>Built for its first 100 users and architected to scale to 10,000+: FastAPI (async), Postgres with pgvector, Redis caching, an SQS-backed TTS worker queue, and AWS ECS with a Kubernetes path. Scaling targets are defined per user tier; load-test results will be published as they are measured.</li>
+      <li>Repository and live demo will be linked here at launch.</li>
+    </ul>
+
+    <div class="row"><h3><a href="https://github.com/myesmin/Climate-Change">Climate Change &amp; Life Expectancy</a> — Bangladesh vs. United States</h3><span class="meta">General Assembly · 2023</span></div>
+    <ul><li>Analysis of how CO₂ emissions, population and life expectancy moved together in the US and Bangladesh from 1998 to 2018, using correlation and time-series comparisons in Python (Pandas, SciPy, Seaborn).</li></ul>
+
+    <div class="row"><h3><a href="https://github.com/myesmin/Kaggle-Ames-Housing-Data">Ames Housing Price Prediction</a> — Kaggle challenge</h3><span class="meta">General Assembly · 2023</span></div>
+    <ul><li>Predicted sale prices for 2,930 homes in Ames, Iowa with linear regression, feature engineering and selection, and Lasso / Ridge / ElasticNet regularization (scikit-learn), scored on RMSE.</li></ul>
+
+    <div class="row"><h3><a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel">Reddit NLP Classifier</a> — r/harrypotter vs. r/marvel</h3><span class="meta">General Assembly · 2023</span></div>
+    <ul><li>Collected posts through the Reddit API (PRAW) and trained TF-IDF classifiers (logistic regression, Naive Bayes) to predict which subreddit a post came from, framed as a targeting problem for Halloween-merchandise advertisers.</li></ul>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Technical skills</h2>
+    <p><strong>AI &amp; machine learning:</strong> Generative AI (LLMs, agentic frameworks, MCP, API integration), Claude Code, Google AI Studio, Graph Neural Networks (PyTorch Geometric), statistical modeling, NLP, neural networks, predictive modeling, feature engineering</p>
+    <p><strong>Data engineering &amp; visualization:</strong> Web scraping, ETL pipelines, Tableau, Matplotlib, Seaborn, Plotly, Power BI</p>
+    <p><strong>Languages:</strong> Python, C++, SQL, Go, HTML, CSS</p>
+    <p><strong>Frameworks:</strong> LangChain, TensorFlow, PyTorch, scikit-learn, PySpark, Streamlit, FastAPI</p>
+    <p><strong>DevOps &amp; productivity:</strong> Git, GitHub, Docker, Supabase, Vercel, Jira, Power Automate, Microsoft Office Suite, Google Workspace</p>
+    <p><strong>Spoken languages:</strong> English, Bengali, Hindi-Urdu (native); Mandarin (conversational); Spanish (basic)</p>
+  </section>
+
+  <section aria-labelledby="cert">
+    <h2 id="cert">Certifications</h2>
+    <p>Hugging Face AI Agents · McKinsey Forward Program</p>
+  </section>
+
+  <section aria-labelledby="lead">
+    <h2 id="lead">Leadership</h2>
+    <ul>
+      <li>Young Climate Leaders of Color — Fellow, New York, NY (2025 – 2026)</li>
+      <li>TEDxWesleyanU — Marketing Intern, Middletown, CT (2020 – 2022)</li>
+      <li>National Organization for Rare Disorders (NORD) — Vice President, Middletown, CT (2020 – 2023)</li>
+    </ul>
+  </section>
+
+  <p class="note">Last updated September 2026. Prefer a PDF? Use your browser’s Print → Save as PDF; this page has a print layout.</p>
+</main>
+</body>
+</html>
