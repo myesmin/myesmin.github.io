@@ -480,6 +480,8 @@ b { font-weight: 600; color: var(--text); }
 .footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding-block: 30px; font: 400 12px/1.4 var(--mono); color: var(--faint); }
 .footer a { color: var(--muted); transition: color .2s; }
 .footer a:hover { color: var(--accent-text); }
+.footer__contact a { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.footer__contact span { margin: 0 .35em; }
 
 /* ── responsive ───────────────────────────────────────────── */
 @media (max-width: 980px) {
