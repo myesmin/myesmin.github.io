@@ -630,6 +630,8 @@ b { font-weight: 600; color: var(--text); }
 .status dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-top: 1px solid var(--line); font-size: 14px; }
 .status dt { font: 400 11px/1.6 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
 .status dd { text-align: right; color: var(--text); }
+.status dd a { color: var(--accent-text); border-bottom: 1px solid transparent; }
+.status dd a:hover { border-color: currentColor; }
 .status .tags { margin-top: 16px; }
 .status .tags li { font-size: 10.5px; padding: 3px 9px; }
 
