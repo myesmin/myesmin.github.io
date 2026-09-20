@@ -370,6 +370,8 @@ b { font-weight: 600; color: var(--text); }
 .bullets li { position: relative; padding-left: 20px; font-size: 15px; line-height: 1.65; color: rgba(var(--rgb-fg), .8); }
 .bullets li::before { content: ""; position: absolute; left: 0; top: .78em; width: 9px; height: 1px; background: var(--accent); }
 .bullets--tight { gap: 9px; }
+.bullets a, .prove__body p a { color: var(--text); border-bottom: 1px solid rgba(var(--rgb-accent), .55); transition: color .25s, border-color .25s; }
+.bullets a:hover, .prove__body p a:hover { color: var(--accent-text); border-color: currentColor; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 .tags a { color: inherit; }
