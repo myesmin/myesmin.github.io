@@ -440,6 +440,10 @@ b { font-weight: 600; color: var(--text); }
 .proj__go { margin-top: auto; padding-top: 22px; font: 500 11.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--text); }
 .proj__go span { display: inline-block; margin-left: 4px; color: var(--accent-text); transition: transform .3s var(--ease); }
 .proj:hover .proj__go span { transform: translate(3px, -3px); }
+.proj__links { display: flex; gap: 22px; margin-top: auto; }
+.proj__links .proj__go { margin-top: 0; }
+.proj__links .proj__go:hover { color: var(--accent-text); }
+.proj__links .proj__go:hover span { transform: translate(3px, -3px); }
 
 /* ── skills terminal (stays dark in both themes) ──────────── */
 .term {
