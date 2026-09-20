@@ -372,6 +372,8 @@ b { font-weight: 600; color: var(--text); }
 .bullets--tight { gap: 9px; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.tags a { color: inherit; }
+.tags a:hover { color: var(--accent-text); }
 .tags li {
   padding: 5px 12px; border: 1px solid rgba(var(--rgb-accent), .5); border-radius: 999px;
   font: 400 11.5px/1.4 var(--mono); color: var(--text); background: rgba(var(--rgb-accent), .06);
@@ -577,8 +579,9 @@ b { font-weight: 600; color: var(--text); }
 .chapter__link { display: inline-block; margin-left: 6px; color: var(--accent-text); border-bottom: 1px solid currentColor; }
 .rail { display: none; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .js .story { height: 520vh; height: 520svh; }
+/* the pinned scroll scene is desktop-only; on phones the chapters simply stack */
+@media (prefers-reduced-motion: no-preference) and (min-width: 821px) {
+  .js .story { height: 400vh; height: 400svh; }
   .js .story__stage { position: sticky; top: 0; height: 100vh; height: 100svh; display: flex; flex-direction: column; justify-content: center; padding-block: calc(var(--nav-h) + 36px) 28px; overflow: hidden; }
   .js .story__stage::before {
     content: ""; position: absolute; inset: 0; z-index: -1;
