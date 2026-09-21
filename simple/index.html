@@ -160,8 +160,7 @@
     <div class="row"><h3>General Assembly<span class="role"> — Data Science Immersive Bootcamp Fellow</span></h3><span class="meta">Sep 2023 – Dec 2023 · New York, NY</span></div>
     <ul>
       <li>Completed 500+ hours of hands-on training in Python and SQL, exploratory data analysis, classical statistical modeling (study design, model evaluation, linear and logistic regression) and machine learning, from decision trees and random forests to NLP and neural networks.</li>
-      <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question: a climate and life-expectancy analysis of the US and Bangladesh; Ames housing price prediction with feature engineering and Lasso / Ridge / ElasticNet regularization, scored on RMSE; and a Reddit NLP classifier using PRAW, TF-IDF, logistic regression and Naive Bayes.</li>
-      <li>Went back and rebuilt the first two from scratch in 2026 — the climate study as a six-notebook pipeline on 2024 data, and Ames as an automated valuation model with out-of-time validation and model-risk governance. Both are listed under Projects.</li>
+      <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question: a climate and life-expectancy analysis of the US and Bangladesh against 190+ economies; an automated valuation model for residential property with conformal price intervals and out-of-time validation; and a Reddit NLP classifier using PRAW, TF-IDF, logistic regression and Naive Bayes.</li>
     </ul>
   </section>
 
@@ -190,8 +189,8 @@
 
     <div class="row"><h3><a href="https://github.com/myesmin/real-estate-valuation-risk">Real-Estate Valuation &amp; Investment Risk</a><span class="role"> — automated valuation model, Ames, Iowa</span></h3><span class="meta">General Assembly 2023 · rebuilt 2026</span></div>
     <ul>
-      <li>Rebuilt the original price-prediction notebooks as a lender-grade automated valuation model (Python, scikit-learn, LightGBM, DuckDB): out-of-time validation, an 80% conformal price range on every property, quarterly drift monitoring, a governance review and credit-loss stress testing, packaged as a containerised HTTP service, with the results published as a <a href="https://huggingface.co/spaces/myesmin1103/ames-avm">static page</a>.</li>
-      <li>Line-by-line review of the first pass found ten defects, four of which invalidated every reported result; recovering the withheld labels scored that model at 36.9% median error, and the leak-proof rebuild reaches 5.1% on the same 878 homes, at 78% lower RMSE.</li>
+      <li>An automated valuation model for residential property — the class of model a lender uses to price collateral (Python, scikit-learn, LightGBM, DuckDB over parquet). Every estimate carries an 80% conformal price range whose coverage is measured against realised sales, validated out-of-time at 5.5% median error with 77% of homes within ±10%.</li>
+      <li>Extended into quarterly drift monitoring, a governance review against the 2024 Interagency AVM Rule, and a credit-risk model in which pricing valuation uncertainty adds 74% to expected losses. Packaged as a containerised HTTP service, with the results published as a <a href="https://huggingface.co/spaces/myesmin1103/ames-avm">static page</a>.</li>
     </ul>
 
     <div class="row"><h3><a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel">Reddit NLP Classifier</a><span class="role"> — r/harrypotter vs. r/marvel</span></h3><span class="meta">General Assembly · 2023</span></div>
