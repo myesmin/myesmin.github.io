@@ -293,7 +293,8 @@
               <ul class="bullets">
                 <li><b>500+ hours</b> of hands-on training in Python and SQL, exploratory data analysis, classical statistical modeling (study design, model evaluation, linear and logistic regression) and machine learning, from decision trees and random forests to NLP and neural networks.</li>
                 <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question.</li>
-                <li>Built a <a href="https://github.com/myesmin/Climate-Change" target="_blank" rel="noopener">climate and life-expectancy analysis</a> of the US and Bangladesh (rebuilt in 2026, see Projects); <a href="https://github.com/myesmin/real-estate-valuation-risk" target="_blank" rel="noopener">Ames housing price prediction</a> with feature engineering, feature selection and Lasso / Ridge / ElasticNet regularization, scored on RMSE (rebuilt in 2026 as a valuation and risk platform, see Projects); and a <a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel" target="_blank" rel="noopener">Reddit NLP classifier</a> on posts collected through the PRAW API, using TF-IDF, logistic regression and Naive Bayes.</li>
+                <li>Built a <a href="https://github.com/myesmin/Climate-Change" target="_blank" rel="noopener">climate and life-expectancy analysis</a> of the US and Bangladesh; an <a href="https://github.com/myesmin/real-estate-valuation-risk" target="_blank" rel="noopener">Ames housing price prediction</a> model with feature engineering, feature selection and Lasso / Ridge / ElasticNet regularization, scored on RMSE; and a <a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel" target="_blank" rel="noopener">Reddit NLP classifier</a> on posts collected through the PRAW API, using TF-IDF, logistic regression and Naive Bayes.</li>
+                <li><b>Went back and rebuilt two of them in 2026.</b> The climate study became a six-notebook pipeline on 2024 data. Ames became an automated valuation model with out-of-time validation, conformal price intervals and model-risk governance, after reading the original notebooks line by line turned up ten defects — four of which had invalidated every number the first pass reported. Both are in Projects below.</li>
               </ul>
               <ul class="tags"><li>Python</li><li>SQL</li><li>pandas</li><li>SciPy</li><li>scikit-learn</li><li>Statistical modeling</li><li>NLP</li></ul>
             </article>
@@ -385,20 +386,22 @@
             <div class="proj__art" aria-hidden="true">
               <svg viewBox="0 0 320 180">
                 <g class="ax"><path d="M24 20V150H300"/><path d="M24 60H300M24 100H300" class="grid"/></g>
+                <path class="band" d="M42 125L292 29L292 51L42 147Z"/>
+                <path class="ln ln--hot" pathLength="1" d="M42 136L292 40"/>
                 <g class="scatter">
-                  <circle cx="44" cy="132" r="3"/><circle cx="62" cy="120" r="3"/><circle cx="78" cy="127" r="3"/><circle cx="96" cy="108" r="3"/>
-                  <circle cx="112" cy="114" r="3"/><circle cx="132" cy="96" r="3"/><circle cx="148" cy="104" r="3"/><circle cx="166" cy="84" r="3"/>
-                  <circle cx="184" cy="92" r="3"/><circle cx="202" cy="70" r="3"/><circle cx="220" cy="78" r="3"/><circle cx="238" cy="56" r="3"/>
-                  <circle cx="254" cy="64" r="3"/><circle cx="272" cy="42" r="3"/><circle cx="288" cy="50" r="3"/>
+                  <circle cx="55" cy="137" r="3"/><circle cx="72" cy="120" r="3"/><circle cx="90" cy="127" r="3"/>
+                  <circle cx="108" cy="97" r="3"/><circle cx="125" cy="107" r="3"/><circle cx="142" cy="91" r="3"/>
+                  <circle cx="160" cy="99" r="3"/><circle cx="178" cy="80" r="3"/><circle cx="195" cy="92" r="3"/>
+                  <circle cx="212" cy="69" r="3"/><circle cx="230" cy="70" r="3"/><circle cx="247" cy="48" r="3"/>
+                  <circle cx="262" cy="55" r="3"/><circle cx="278" cy="32" r="3"/><circle cx="288" cy="48" r="3"/>
                 </g>
-                <path class="ln ln--hot" pathLength="1" d="M34 136L296 42"/>
                 <text x="30" y="14" class="lbl">valuation vs. realised price · 80% interval</text>
               </svg>
             </div>
             <div class="proj__body">
               <h4>Real-Estate Valuation &amp; Risk</h4>
-              <p class="proj__sub">Automated valuation model · Ames, Iowa</p>
-              <p>Rebuilt the Kaggle regression into a lender-grade valuation model: out-of-time validation, an 80% price range on every property, drift monitoring, governance and credit-loss stress testing. A leak in the first pass had hidden a true error of 36.9%; the rebuild reaches 5.1% on the same homes.</p>
+              <p class="proj__sub">Ames, Iowa · 2,412 arm’s-length sales</p>
+              <p>An automated valuation model for residential property — the class of model a lender uses to price collateral. Every estimate carries an 80% price range whose coverage is measured, not assumed. LightGBM and regularised regression over a DuckDB feature layer, validated out-of-time: <b>5.5% median error</b>, 77% of homes within ±10%. Pricing that valuation uncertainty into a loan book adds <b>74%</b> to expected credit losses.</p>
               <ul class="tags"><li>LightGBM</li><li>Conformal prediction</li><li>DuckDB SQL</li><li>Model risk</li></ul>
               <div class="proj__links">
                 <a class="proj__go" href="https://huggingface.co/spaces/myesmin1103/ames-avm" target="_blank" rel="noopener">Results <span aria-hidden="true">↗</span></a>
