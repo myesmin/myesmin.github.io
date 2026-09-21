@@ -293,7 +293,7 @@
               <ul class="bullets">
                 <li><b>500+ hours</b> of hands-on training in Python and SQL, exploratory data analysis, classical statistical modeling (study design, model evaluation, linear and logistic regression) and machine learning, from decision trees and random forests to NLP and neural networks.</li>
                 <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question.</li>
-                <li>Built a <a href="https://github.com/myesmin/Climate-Change" target="_blank" rel="noopener">climate and life-expectancy analysis</a> of the US and Bangladesh (rebuilt in 2026, see Projects); <a href="https://github.com/myesmin/Kaggle-Ames-Housing-Data" target="_blank" rel="noopener">Ames housing price prediction</a> with feature engineering, feature selection and Lasso / Ridge / ElasticNet regularization, scored on RMSE; and a <a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel" target="_blank" rel="noopener">Reddit NLP classifier</a> on posts collected through the PRAW API, using TF-IDF, logistic regression and Naive Bayes.</li>
+                <li>Built a <a href="https://github.com/myesmin/Climate-Change" target="_blank" rel="noopener">climate and life-expectancy analysis</a> of the US and Bangladesh (rebuilt in 2026, see Projects); <a href="https://github.com/myesmin/real-estate-valuation-risk" target="_blank" rel="noopener">Ames housing price prediction</a> with feature engineering, feature selection and Lasso / Ridge / ElasticNet regularization, scored on RMSE (rebuilt in 2026 as a valuation and risk platform, see Projects); and a <a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel" target="_blank" rel="noopener">Reddit NLP classifier</a> on posts collected through the PRAW API, using TF-IDF, logistic regression and Naive Bayes.</li>
               </ul>
               <ul class="tags"><li>Python</li><li>SQL</li><li>pandas</li><li>SciPy</li><li>scikit-learn</li><li>Statistical modeling</li><li>NLP</li></ul>
             </article>
@@ -352,7 +352,7 @@
           </div>
         </article>
 
-        <p class="subhead reveal">// data science projects · general assembly, 2023 · climate rebuilt 2026</p>
+        <p class="subhead reveal">// data science projects · general assembly, 2023 · climate and ames rebuilt 2026</p>
 
         <div class="grid3">
           <!-- Climate -->
@@ -381,7 +381,7 @@
           </article>
 
           <!-- Ames -->
-          <a class="proj reveal" style="--d:.08s" href="https://github.com/myesmin/Kaggle-Ames-Housing-Data" target="_blank" rel="noopener">
+          <article class="proj reveal" style="--d:.08s">
             <div class="proj__art" aria-hidden="true">
               <svg viewBox="0 0 320 180">
                 <g class="ax"><path d="M24 20V150H300"/><path d="M24 60H300M24 100H300" class="grid"/></g>
@@ -392,17 +392,20 @@
                   <circle cx="254" cy="64" r="3"/><circle cx="272" cy="42" r="3"/><circle cx="288" cy="50" r="3"/>
                 </g>
                 <path class="ln ln--hot" pathLength="1" d="M34 136L296 42"/>
-                <text x="30" y="14" class="lbl">sale price ~ features · RMSE</text>
+                <text x="30" y="14" class="lbl">valuation vs. realised price · 80% interval</text>
               </svg>
             </div>
             <div class="proj__body">
-              <h4>Ames Housing Price Prediction</h4>
-              <p class="proj__sub">Kaggle challenge · 2,930 homes</p>
-              <p>Predicts sale prices for homes in Ames, Iowa with linear regression, feature engineering and selection, and Lasso / Ridge / ElasticNet regularization, scored on RMSE and built to hold up on unseen data.</p>
-              <ul class="tags"><li>scikit-learn</li><li>Regularization</li><li>Feature engineering</li></ul>
-              <span class="proj__go">View on GitHub <span aria-hidden="true">↗</span></span>
+              <h4>Real-Estate Valuation &amp; Risk</h4>
+              <p class="proj__sub">Automated valuation model · Ames, Iowa</p>
+              <p>Rebuilt the Kaggle regression into a lender-grade valuation model: out-of-time validation, an 80% price range on every property, drift monitoring, governance and credit-loss stress testing. A leak in the first pass had hidden a true error of 36.9%; the rebuild reaches 5.1% on the same homes.</p>
+              <ul class="tags"><li>LightGBM</li><li>Conformal prediction</li><li>DuckDB SQL</li><li>Model risk</li></ul>
+              <div class="proj__links">
+                <a class="proj__go" href="https://huggingface.co/spaces/myesmin1103/ames-avm" target="_blank" rel="noopener">Results <span aria-hidden="true">↗</span></a>
+                <a class="proj__go" href="https://github.com/myesmin/real-estate-valuation-risk" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
-          </a>
+          </article>
 
           <!-- Reddit -->
           <a class="proj reveal" style="--d:.16s" href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel" target="_blank" rel="noopener">
@@ -508,7 +511,7 @@
             <dl>
               <div><dt>launch target</dt><dd>100 users</dd></div>
               <div><dt>designed for</dt><dd>10,000+</dd></div>
-              <div><dt>links</dt><dd><a href="https://github.com/myesmin/SERA" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a> · live demo at launch</dd></div>
+              <div><dt>links</dt><dd><a href="https://github.com/myesmin/sera" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a> · live demo at launch</dd></div>
             </dl>
             <ul class="tags">
               <li>FastAPI (async)</li><li>Postgres + pgvector</li><li>Redis</li><li>SQS</li><li>StyleTTS 2</li>

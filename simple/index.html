@@ -160,7 +160,7 @@
     <div class="row"><h3>General Assembly<span class="role"> — Data Science Immersive Bootcamp Fellow</span></h3><span class="meta">Sep 2023 – Dec 2023 · New York, NY</span></div>
     <ul>
       <li>Completed 500+ hours of hands-on training in Python and SQL, exploratory data analysis, classical statistical modeling (study design, model evaluation, linear and logistic regression) and machine learning, from decision trees and random forests to NLP and neural networks.</li>
-      <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question: a climate and life-expectancy analysis of the US and Bangladesh (rebuilt in 2026); Ames housing price prediction with feature engineering and Lasso / Ridge / ElasticNet regularization, scored on RMSE; and a Reddit NLP classifier using PRAW, TF-IDF, logistic regression and Naive Bayes.</li>
+      <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question: a climate and life-expectancy analysis of the US and Bangladesh (rebuilt in 2026); Ames housing price prediction with feature engineering and Lasso / Ridge / ElasticNet regularization, scored on RMSE (rebuilt in 2026); and a Reddit NLP classifier using PRAW, TF-IDF, logistic regression and Naive Bayes.</li>
     </ul>
   </section>
 
@@ -178,7 +178,7 @@
     <ul>
       <li>Designing an app that reads uploaded PDFs aloud in an original synthetic voice (StyleTTS 2) with word-by-word synchronized highlighting, a retrieval-augmented “Ask Sera” assistant (LangGraph, pgvector) and reading-based recommendations.</li>
       <li>Built for its first 100 users and architected to scale to 10,000+: FastAPI (async), Postgres with pgvector, Redis caching, an SQS-backed TTS worker queue, and AWS ECS with a Kubernetes path. Scaling targets are defined per user tier; load-test results will be published as they are measured.</li>
-      <li>Project page: <a href="https://github.com/myesmin/SERA">github.com/myesmin/SERA</a>. Live demo will be linked here at launch.</li>
+      <li>Project page: <a href="https://github.com/myesmin/sera">github.com/myesmin/sera</a>, with the engineering method behind it. Live demo will be linked here at launch.</li>
     </ul>
 
     <div class="row"><h3><a href="https://github.com/myesmin/Climate-Change">Climate Risk, Emissions &amp; Development</a><span class="role"> — US and Bangladesh vs. 190+ economies</span></h3><span class="meta">General Assembly 2023 · rebuilt 2026</span></div>
@@ -187,8 +187,11 @@
       <li>Found a 23× per-person emissions gap between the US and Bangladesh, forecast error rising to about 18% at nine years, and fast decarbonisation still overshooting a 2 °C budget.</li>
     </ul>
 
-    <div class="row"><h3><a href="https://github.com/myesmin/Kaggle-Ames-Housing-Data">Ames Housing Price Prediction</a><span class="role"> — Kaggle challenge</span></h3><span class="meta">General Assembly · 2023</span></div>
-    <ul><li>Predicted sale prices for 2,930 homes in Ames, Iowa with linear regression, feature engineering and selection, and Lasso / Ridge / ElasticNet regularization (scikit-learn), scored on RMSE.</li></ul>
+    <div class="row"><h3><a href="https://github.com/myesmin/real-estate-valuation-risk">Real-Estate Valuation &amp; Investment Risk</a><span class="role"> — automated valuation model, Ames, Iowa</span></h3><span class="meta">General Assembly 2023 · rebuilt 2026</span></div>
+    <ul>
+      <li>Rebuilt the original price-prediction notebooks as a lender-grade automated valuation model (Python, scikit-learn, LightGBM, DuckDB): out-of-time validation, an 80% conformal price range on every property, quarterly drift monitoring, a governance review and credit-loss stress testing, packaged as a containerised HTTP service, with the results published as a <a href="https://huggingface.co/spaces/myesmin1103/ames-avm">static page</a>.</li>
+      <li>Line-by-line review of the first pass found ten defects, four of which invalidated every reported result; recovering the withheld labels scored that model at 36.9% median error, and the leak-proof rebuild reaches 5.1% on the same 878 homes, at 78% lower RMSE.</li>
+    </ul>
 
     <div class="row"><h3><a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel">Reddit NLP Classifier</a><span class="role"> — r/harrypotter vs. r/marvel</span></h3><span class="meta">General Assembly · 2023</span></div>
     <ul><li>Collected posts through the Reddit API (PRAW) and trained TF-IDF classifiers (logistic regression, Naive Bayes) to predict which subreddit a post came from, framed as a targeting problem for Halloween-merchandise advertisers.</li></ul>
