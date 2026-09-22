@@ -160,7 +160,7 @@
     <div class="row"><h3>General Assembly<span class="role"> — Data Science Immersive Bootcamp Fellow</span></h3><span class="meta">Sep 2023 – Dec 2023 · New York, NY</span></div>
     <ul>
       <li>Completed 500+ hours of hands-on training in Python and SQL, exploratory data analysis, classical statistical modeling (study design, model evaluation, linear and logistic regression) and machine learning, from decision trees and random forests to NLP and neural networks.</li>
-      <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question: a climate and life-expectancy analysis of the US and Bangladesh against 190+ economies; an automated valuation model for residential property with conformal price intervals and out-of-time validation; and a Reddit NLP classifier using PRAW, TF-IDF, logistic regression and Naive Bayes.</li>
+      <li>Applied it end to end in three projects, each a written technical report plus a presentation built around a stakeholder question: a climate and life-expectancy analysis of the US and Bangladesh against 190+ economies; an automated valuation model for residential property with conformal price intervals and out-of-time validation; and a Reddit NLP classifier (TF-IDF, logistic regression, Naive Bayes) that I later rebuilt into ModSieve, a moderation-triage tool.</li>
     </ul>
   </section>
 
@@ -193,8 +193,8 @@
       <li>Ongoing monitoring across six production quarters, a governance review against the 2024 Interagency AVM Rule, and a credit-risk model in which pricing valuation uncertainty adds 74% to expected losses. Packaged as a containerised HTTP service, with the results published as a <a href="https://huggingface.co/spaces/myesmin1103/ames-avm">static page</a>.</li>
     </ul>
 
-    <div class="row"><h3><a href="https://github.com/myesmin/Reddit-NLP-Harry-Potter-Marvel">Reddit NLP Classifier</a><span class="role"> — r/harrypotter vs. r/marvel</span></h3><span class="meta">PRAW · TF-IDF · scikit-learn</span></div>
-    <ul><li>Collected posts through the Reddit API (PRAW) and trained TF-IDF classifiers (logistic regression, Naive Bayes) to predict which subreddit a post came from, framed as a targeting problem for Halloween-merchandise advertisers.</li></ul>
+    <div class="row"><h3><a href="https://github.com/myesmin/ModSieve-Reddit-Moderation-Triage">ModSieve</a><span class="role"> — Reddit moderation triage (in progress)</span></h3><span class="meta">NLP · scikit-learn · TF-IDF</span></div>
+    <ul><li>A first-pass moderation tool that resolves the posts it is confident about and sends the rest to a human moderator. Tuned to hold a fixed precision, it auto-resolves 22.5% of posts at 99.2% precision and scored 0.820 against a blind human baseline of 0.802. Labels come from real moderator removals collected hourly across 8 communities.</li></ul>
   </section>
 
   <section class="skills" aria-labelledby="skills">
