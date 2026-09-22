@@ -365,6 +365,7 @@ b { font-weight: 600; color: var(--text); }
 .card .sep { color: var(--faint); margin-inline: .12em; }
 .org { margin-top: 8px; font: 400 13px/1.3 var(--mono); color: var(--accent-text); }
 .meta { flex: none; text-align: right; font: 400 12px/1.6 var(--mono); color: var(--muted); }
+.card__path { margin: -6px 0 16px; font: 400 12px/1.6 var(--mono); color: var(--muted); }
 
 .bullets { display: grid; gap: 11px; }
 .bullets li { position: relative; padding-left: 20px; font-size: 15px; line-height: 1.65; color: rgba(var(--rgb-fg), .8); }
