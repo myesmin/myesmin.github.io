@@ -93,9 +93,50 @@
     revealables.forEach((el) => el.classList.add('in'));
   }
 
-  /* ── scroll-driven scenes (hero, stack) ────────────────── */
+  /* ── scroll-driven scenes (hero, story, stack) ─────────── */
   const hero = $('#top');
+  const story = $('#story');
   const figure = $('.about__figure');
+  const chapters = $$('.chapter', story);
+  const railItems = $$('.rail li', story);
+
+  // split each scrubbed headline into words so they can light up one by one
+  const scrubSets = $$('[data-scrub]', story).map((el) => {
+    const words = el.textContent.trim().split(/\s+/);
+    el.setAttribute('aria-label', el.textContent.trim());
+    el.innerHTML = words.map((w) => `<span class="w" aria-hidden="true">${w}</span>`).join(' ');
+    return $$('.w', el);
+  });
+
+  let lastChapter = -1;
+  const updateStory = () => {
+    const r = story.getBoundingClientRect();
+    const total = r.height - window.innerHeight;
+    if (total <= 0) return;
+    const p = clamp(-r.top / total, 0, 1);
+    story.style.setProperty('--sp', p.toFixed(4));
+
+    const n = chapters.length;
+    const f = clamp(p * n, 0, n - 0.0001);
+    const i = Math.floor(f);
+    const local = f - i;
+
+    if (i !== lastChapter) {
+      chapters.forEach((c, k) => {
+        c.classList.toggle('is-active', k === i);
+        c.classList.toggle('is-past', k < i);
+      });
+      railItems.forEach((li, k) => li.classList.toggle('on', k <= i));
+      lastChapter = i;
+    }
+
+    // words light up over the first ~70% of each chapter
+    const words = scrubSets[i];
+    if (words) {
+      const lit = clamp(local / 0.7, 0, 1) * words.length;
+      words.forEach((w, k) => w.classList.toggle('on', k < Math.ceil(lit) || local > 0.7));
+    }
+  };
 
   const updateScenes = () => {
     const y = window.scrollY;
@@ -106,6 +147,10 @@
     if (hero) {
       const hp = clamp(y / (hero.offsetHeight * 0.75), 0, 1);
       hero.style.setProperty('--hp', hp.toFixed(3));
+    }
+    if (story && chapters.length) {
+      const r = story.getBoundingClientRect();
+      if (r.top < vh && r.bottom > 0) updateStory();
     }
     if (figure) {
       const r = figure.getBoundingClientRect();
@@ -125,6 +170,10 @@
   window.addEventListener('scroll', requestUpdate, { passive: true });
   window.addEventListener('resize', requestUpdate);
 
+  if (reduceMotion) {
+    // no pinned scene: show every headline fully lit
+    scrubSets.forEach((set) => set.forEach((w) => w.classList.add('on')));
+  }
   if (!reduceMotion && figure) figure.style.setProperty('--ex', '0');
   updateScenes();
 

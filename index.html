@@ -60,6 +60,7 @@
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#experience" data-spy="experience">Experience</a>
         <a href="#projects" data-spy="projects">Projects</a>
+        <a href="#story" data-spy="story">Story</a>
         <a href="#sera" data-spy="sera">Sera</a>
         <a href="#about" data-spy="about">About</a>
         <a href="#skills" data-spy="skills">Skills</a>
@@ -116,36 +117,83 @@
       </div>
     </section>
 
-    <!-- ───────────── HOW I WORK (proof band) ───────────── -->
-    <section class="proof" id="strengths" aria-labelledby="proofTitle">
+    <!-- ───────────── METRICS ───────────── -->
+    <section class="metrics" aria-label="Highlights">
       <div class="wrap">
-        <header class="proof__head reveal">
-          <p class="kicker">how i work</p>
-          <h2 id="proofTitle">Proof, not <em>adjectives.</em></h2>
+        <ul class="metrics__grid">
+          <li class="reveal"><b data-count="87.5" data-decimals="1" data-suffix="%">87.5%</b><span>test accuracy on a 200-protein GNN benchmark</span></li>
+          <li class="reveal" style="--d:.08s"><b data-count="270" data-suffix="+">270+</b><span>unit &amp; E2E tests validated across Kubeflow PRs</span></li>
+          <li class="reveal" style="--d:.16s"><b data-count="77" data-suffix="%">77%</b><span>of homes valued within ±10% by the valuation model, out-of-time</span></li>
+          <li class="reveal" style="--d:.24s"><b data-count="190" data-suffix="+">190+</b><span>economies reconciled across 6 public data sources, 1960–2024</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── HOW I WORK ───────────── -->
+    <section class="section" id="strengths">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker"><span>01</span> how i work</p>
+          <h2>Proof, not <em>adjectives.</em></h2>
         </header>
 
-        <ul class="proof__grid">
-          <li class="reveal">
-            <b data-count="87.5" data-decimals="1" data-suffix="%">87.5%</b>
-            <h3>I check the number that looks too good.</h3>
-            <p>Test accuracy on a 200-protein GNN benchmark at DAIR Lab. On species the model never saw, it drops to ~55%. That gap is what I’m working on now.</p>
-          </li>
-          <li class="reveal" style="--d:.08s">
-            <b data-count="77" data-suffix="%">77%</b>
-            <h3>I say how sure the model is.</h3>
-            <p>Share of homes my valuation model priced within ±10% of later sales. Every estimate comes with a price range, and I tested how often the sale price actually landed inside it.</p>
-          </li>
-          <li class="reveal" style="--d:.16s">
-            <b data-count="270" data-suffix="+">270+</b>
-            <h3>I ship to people I’ve never met.</h3>
-            <p>Unit and E2E tests passing across my merged Kubeflow PRs, the work that made me an org member of the open-source ML platform.</p>
-          </li>
-          <li class="reveal" style="--d:.24s">
-            <b data-count="190" data-suffix="+">190+</b>
-            <h3>I don’t trust a single source.</h3>
-            <p>Economies reconciled across six public datasets, 1960–2024. Where two sources disagreed, I measured the gap instead of picking one.</p>
-          </li>
-        </ul>
+        <div class="proofs">
+          <article class="prove reveal">
+            <div class="prove__lead">
+              <span class="prove__n">i.</span>
+              <h3>I check the number that looks too good.</h3>
+            </div>
+            <div class="prove__body">
+              <p>At DAIR Lab I debugged a label-mapping defect that was silently corrupting class-level statistics, then scaled a toxin ion-channel classification pipeline to a 200-protein benchmark. The real test wasn’t the headline accuracy, it was how the model did on species it had never seen:</p>
+              <div class="bars" role="img" aria-label="Accuracy on a random split is about 86 percent, on held-out taxa about 55 percent.">
+                <div class="bar"><span class="bar__l">random split</span><span class="bar__t"><i style="--w:86%"></i></span><span class="bar__v">~86%</span></div>
+                <div class="bar bar--hot"><span class="bar__l">held-out taxon</span><span class="bar__t"><i style="--w:55%"></i></span><span class="bar__v">~55%</span></div>
+              </div>
+              <p class="prove__note">That ~30-point generalization gap is what I’m closing with a custom Gradient Reversal Layer for domain-adversarial training.</p>
+            </div>
+          </article>
+
+          <article class="prove reveal">
+            <div class="prove__lead">
+              <span class="prove__n">ii.</span>
+              <h3>I automate the boring part.</h3>
+            </div>
+            <div class="prove__body">
+              <p>At EN-POWER Group I built Python tools for client communications, document workflows and file management across <b>1,000+ clients</b>, while supporting LL97 compliance filings for <b>900+ properties</b>.</p>
+              <div class="bars" role="img" aria-label="Manual processing time dropped from 100 percent to under 50 percent.">
+                <div class="bar"><span class="bar__l">manual, before</span><span class="bar__t"><i style="--w:100%"></i></span><span class="bar__v">100%</span></div>
+                <div class="bar bar--hot"><span class="bar__l">with automation</span><span class="bar__t"><i style="--w:48%"></i></span><span class="bar__v">&lt; 50%</span></div>
+              </div>
+              <p class="prove__note">Manual processing time cut by more than half.</p>
+            </div>
+          </article>
+
+          <article class="prove reveal">
+            <div class="prove__lead">
+              <span class="prove__n">iii.</span>
+              <h3>I ship to people I’ve never met.</h3>
+            </div>
+            <div class="prove__body">
+              <p>Kubeflow is open-source infrastructure other teams depend on. My PRs moved its Python clients to v1 with <b>270+</b> unit and E2E tests passing, I added a decoupled artifact-upload utility, and I co-authored the <a href="https://blog.kubeflow.org/kubeflow-sdk-0.4.0-release/" target="_blank" rel="noopener">SDK 0.4.0 release post</a>, which is how I became an org member.</p>
+              <ul class="tags tags--lg">
+                <li><a href="https://github.com/kubeflow/hub/pull/3114" target="_blank" rel="noopener">merged · hub #3114</a></li><li><a href="https://github.com/kubeflow/hub/pull/3137" target="_blank" rel="noopener">merged · hub #3137</a></li><li><a href="https://github.com/kubeflow/sdk/pull/514" target="_blank" rel="noopener">merged · sdk #514</a></li><li>270+ tests validated</li><li>org member</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="prove reveal">
+            <div class="prove__lead">
+              <span class="prove__n">iv.</span>
+              <h3>I don’t trust a single source.</h3>
+            </div>
+            <div class="prove__body">
+              <p>For my climate research I reconciled emissions, income, population and health data from six public sources into one panel covering <b>190+ economies</b> from 1960 to 2024. Sources rarely agree, so I measured the gap: national CO₂ from two providers correlates at 0.995 with a median difference of 5.2%, and I flagged an upstream error in one country’s life-expectancy series instead of smoothing it over.</p>
+              <ul class="tags tags--lg">
+                <li>Global Carbon Project</li><li>World Bank</li><li>UN WPP</li><li>EDGAR</li><li>Maddison</li><li>Copernicus ERA5</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -153,7 +201,7 @@
     <section class="section" id="experience">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker"><span>01</span> experience</p>
+          <p class="kicker"><span>02</span> experience</p>
           <h2>Where I’ve been <em>building.</em></h2>
         </header>
 
@@ -258,7 +306,7 @@
     <section class="section" id="projects">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker"><span>02</span> projects</p>
+          <p class="kicker"><span>03</span> projects</p>
           <h2>Things I’ve <em>shipped.</em></h2>
         </header>
 
@@ -389,11 +437,59 @@
       </div>
     </section>
 
+    <!-- ───────────── STORY (pinned, scroll-driven) ───────────── -->
+    <section class="story" id="story" aria-label="How I got here">
+      <div class="story__stage">
+        <div class="wrap story__inner">
+          <p class="kicker"><span>04</span> story</p>
+
+          <div class="story__chapters">
+            <article class="chapter">
+              <span class="chapter__num" aria-hidden="true">01</span>
+              <p class="chapter__tag">Wesleyan University · B.A. Neuroscience &amp; Behavior</p>
+              <h2 class="chapter__head" data-scrub>I started by asking how people think, focus and behave.</h2>
+              <p class="chapter__body">Minors in Chemistry and Film, and a habit I’ve kept ever since: ask a question, then work out how to test whether the answer holds.</p>
+            </article>
+
+            <article class="chapter">
+              <span class="chapter__num" aria-hidden="true">02</span>
+              <p class="chapter__tag">DRUM · General Assembly · Climate data</p>
+              <h2 class="chapter__head" data-scrub>Then climate data gave those questions something to measure.</h2>
+              <p class="chapter__body">At DRUM I worked with climate and community data, and learned to make analysis useful to people who never open a notebook. General Assembly gave me the tools to take that research much deeper.</p>
+            </article>
+
+            <article class="chapter">
+              <span class="chapter__num" aria-hidden="true">03</span>
+              <p class="chapter__tag">Energy Data Manager I · EN-POWER Group · Hunter College</p>
+              <h2 class="chapter__head" data-scrub>Then I took it hyper-local: NYC buildings.</h2>
+              <p class="chapter__body">At EN-POWER I model building emissions across NYC from multiple energy data sources. Same climate question, one building at a time, and where I wanted to go much deeper into machine learning.</p>
+            </article>
+
+            <article class="chapter">
+              <span class="chapter__num" aria-hidden="true">04</span>
+              <p class="chapter__tag">DAIR Lab · Kubeflow · Sera</p>
+              <h2 class="chapter__head" data-scrub>Now I go deeper into ML, and back to the mind.</h2>
+              <p class="chapter__body">Neural networks came from neuroscience: people studying how the brain learns and makes decisions, then rebuilding those ideas as models. That link is what fascinates me. I build graph neural networks at DAIR Lab, contribute to Kubeflow, and am making Sera, a reading app built around how people read.
+                <a class="chapter__link" href="#sera">See how it scales <span aria-hidden="true">↓</span></a></p>
+            </article>
+          </div>
+
+          <ol class="rail" aria-hidden="true">
+            <li><span>Neuroscience</span></li>
+            <li><span>Climate</span></li>
+            <li><span>Buildings</span></li>
+            <li><span>AI / ML</span></li>
+            <i class="rail__fill"></i>
+          </ol>
+        </div>
+      </div>
+    </section>
+
     <!-- ───────────── SERA (flagship) ───────────── -->
     <section class="section sera" id="sera">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker"><span>03</span> flagship · in development</p>
+          <p class="kicker"><span>05</span> flagship · in development</p>
           <h2>Sera: reading, <em>engineered to scale.</em></h2>
         </header>
 
@@ -519,34 +615,21 @@
     <section class="section" id="about">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker"><span>04</span> about</p>
-          <h2>How I got <em>here.</em></h2>
+          <p class="kicker"><span>06</span> about</p>
+          <h2>The stack, <em>exploded.</em></h2>
         </header>
 
         <div class="about">
           <div class="about__text">
-            <ol class="journey">
-              <li class="reveal">
-                <p class="journey__tag">Wesleyan · Neuroscience &amp; Behavior</p>
-                <h3>I started by asking how people think, focus and behave.</h3>
-                <p>And picked up a habit I’ve kept: ask a question, then work out how to test whether the answer holds.</p>
-              </li>
-              <li class="reveal">
-                <p class="journey__tag">DRUM · General Assembly</p>
-                <h3>Climate data gave those questions something to measure.</h3>
-                <p>As data lead for a community campaign I learned to make analysis useful to people who never open a notebook. General Assembly gave me the tools to go deeper.</p>
-              </li>
-              <li class="reveal">
-                <p class="journey__tag">EN-POWER Group · Hunter College</p>
-                <h3>Then I took it hyper-local: NYC buildings.</h3>
-                <p>The same climate question, one building at a time, and the point where I wanted much more machine learning than the job needed.</p>
-              </li>
-              <li class="reveal">
-                <p class="journey__tag">DAIR Lab · Kubeflow · Sera</p>
-                <h3>Now I go deeper into ML, and back to the mind.</h3>
-                <p>Neural networks came out of people studying how the brain learns. That link is what pulls me in, and it’s why I’m building <a href="#sera">Sera</a> around how people actually read.</p>
-              </li>
-            </ol>
+            <p class="reveal">
+              I build and debug ML systems: graph neural networks for protein research at DAIR Lab,
+              emissions models for NYC buildings at EN-POWER Group, climate research across 190+ economies,
+              LLM agent pipelines, and Python and Go tooling for Kubeflow, where I’m an org member. I like
+              turning many messy data sources into one answer I can defend. I was also the data lead for a
+              community-organizing campaign at DRUM, which taught me to make analysis useful to people
+              who never open a notebook.
+            </p>
+
             <dl class="facts reveal">
               <div>
                 <dt>education</dt>
@@ -652,7 +735,7 @@
     <section class="section" id="skills">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker"><span>05</span> skills</p>
+          <p class="kicker"><span>07</span> skills</p>
           <h2>The <em>toolkit.</em></h2>
         </header>
 
@@ -703,7 +786,7 @@
     <!-- ───────────── CONTACT ───────────── -->
     <section class="section contact" id="contact">
       <div class="wrap">
-        <p class="kicker reveal"><span>06</span> contact</p>
+        <p class="kicker reveal"><span>08</span> contact</p>
         <h2 class="contact__title reveal">Let’s build<br>something <em>together.</em></h2>
         <p class="contact__lede reveal">I’m open to roles in AI, machine learning, data and software engineering. The fastest way to reach me is email.</p>
 
